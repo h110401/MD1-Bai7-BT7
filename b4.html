@@ -30,22 +30,12 @@ c = <input type="text" id="c">
         let b = +document.getElementById('b').value;
         let c = +document.getElementById('c').value;
 
-        let max = a;
-
         let isInt = ( parseInt(a) == a && parseInt(b) == b && parseInt(c) == c);
 
         if(!isInt){
             document.getElementById('result').innerText = 'Nhap sai';
         } else {
-            if (b > max) {
-                if (b > c) {
-                    max = b;
-                } else {
-                    max = c;
-                }
-            } else if (c > max) {
-                max = c;
-            }
+            let max = a > b ? ( a > c ? a : c ) : ( b > c ? b : c);
             document.getElementById('result').innerText = 'Max = ' + max;
         }
     }
