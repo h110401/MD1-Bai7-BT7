@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let toan = +prompt('Nhap diem toan');
+    let ly = +prompt('Nhap diem ly');
+    let hoa = +prompt('Nhap diem hoa');
+
+    let trungBinh = (toan + ly + hoa) / 3
+
+    if (trungBinh > 8.5) {
+        alert('Hoc luc gioi');
+    } else if (trungBinh > 7) {
+        alert('Hoc luc kha');
+    } else if (trungBinh > 5){
+        alert('Hoc luc trung binh');
+    } else {
+        alert('Hoc luc kem')
+    }
+</script>
+
+</body>
+</html>
